@@ -9,21 +9,23 @@ Built with four essential dependencies—axios, request, ejs, and express—AITU
 Enjoy simplicity and accuracy in checking the weather—AITU Weather v1 makes staying informed a breeze. Just type in the city, and the latest weather details are right in front of you!
 https://github.com/theByegarys/AITU_WeatherApp_Project 
 
-Instructions:
 
 
-API Key Requirement
+
+**API Key Requirement**
 
 Before running this repository, please note that you'll need API keys for certain functionalities. Make sure to obtain the necessary API keys first. Refer to the project documentation for guidance on acquiring and integrating these keys into the application.
+
+Instructions:
 
 1) Begin by downloading the project archive from the repository.
 
 2) Open your preferred Integrated Development Environment (IDE) and go to the folder where you have saved the project files.
 
-3) Now, open your IDE or computer terminal and set up the project by running a series of commands.
+3) Now, open your IDE or computer terminal and set up the project by running a series of commands. Begin by creating a new Node.js project with:
 
 
-            Begin by creating a new Node.js project with: npm init -y. Afterward, install crucial packages using: npm i express socket.io ejs request.
+                         npm init -y. Afterward, install crucial packages using: npm i axios express ejs request.
 
 4) After installing the required packages, start the server by entering the command: node server.js in the terminal. This will initiate the server, allowing it to handle requests. To access the application, open your web browser and visit localhost:3000.
 
