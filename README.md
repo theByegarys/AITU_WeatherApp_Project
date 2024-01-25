@@ -1,4 +1,4 @@
-# Assignment_#2_Weather_App
+# Assignment #2 Weather App
 
 Welcome to AITU Weather App v1, a user-friendly weather web app powered by Node.js. With just the city name, you can get the latest weather update in a snap.
 
@@ -16,7 +16,7 @@ https://github.com/theByegarys/AITU_WeatherApp_Project
 
 Before running this repository, please note that you'll need API keys for certain functionalities. Make sure to obtain the necessary API keys first. Refer to the project documentation for guidance on acquiring and integrating these keys into the application.
 
-Instructions:
+**Instructions:**
 
 1) Begin by downloading the project archive from the repository.
 
@@ -33,7 +33,6 @@ Instructions:
 
 ![1](https://github.com/theByegarys/AITU_WeatherApp_Project/assets/151679453/704f489d-97aa-4464-a91e-b00e28f6d49b)
 ![3](https://github.com/theByegarys/AITU_WeatherApp_Project/assets/151679453/bb7af2d9-0f94-4ac5-a0f0-5e9493abd2ea)
-![4](https://github.com/theByegarys/AITU_WeatherApp_Project/assets/151679453/d5a75490-7911-4d7a-9c2e-c37b36895d3f)
 ![5](https://github.com/theByegarys/AITU_WeatherApp_Project/assets/151679453/b24c619f-70df-40dd-8551-85fed0063090)
 
 
