@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" /> 
+  </head>
+  <body class="body-background">
+  <body>
+    <div class="container">
+      <a href="http://localhost:3000/"> <img src="aituweatherapp.png" alt="Logo"> </a>
+      <form action="/weather" method="get">
+        <input type="text" name="city" placeholder="Please Enter City Name" />
+        <button type="submit">Check Weather</button>
+      </form>
+      ` <% if (error) { %>
+      <p class="error"><%= error %></p>
+      <% } else if (weather) { %>
+      <div class="card">
+        <!-- Add your weather data here -->
+        <% if(weather.sys.country) { %>
+          <img src="https://flagsapi.com/<%=weather.sys.country%>/flat/64.png" alt="Flag">
+        <% } %>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          Country & City: <%=weather.sys.country%>, <%=weather.name%>
+        </p>
+         <p>
+          <i class="fas fa-map-marked"></i>
+          Latitude: <%= weather.coord.lat %>
+        </p>
+        <p>
+          <i class="fas fa-map-marked-alt"></i>
+          Longitude: <%= weather.coord.lon %>
+       </p>
+        <p>
+        <i class="fas fa-clock"></i>
+        Last Update: <%= formatTime(weather.dt) %>
+        </p><br>
+        <p>
+          <i class="fas fa-thermometer-half"></i>
+          Weather: <%=weather.main.temp%>&deg;C
+        </p>
+        <p>
+          <i class="fas fa-thermometer-half"></i>
+          Feels Like: <%=weather.main.feels_like%>&deg;C
+        </p>
+        <p>
+          <i class="fas fa-cloud"></i>
+         Sky: <%=weather.weather[0].main%>
+        </p>
+        <p>
+          <i class="fas fa-thermometer-empty"></i>
+          Min Temperature: <%= weather.main.temp_min %>&deg;C
+        </p>
+         <p>
+          <i class="fas fa-thermometer-full"></i>
+          Max Temperature: <%= weather.main.temp_max %>&deg;C
+        </p>
+        <p>
+          <i class="fas fa-wind"></i>
+          Wind Speed: <%= weather.wind.speed %> m/s
+        </p>
+       <p>
+          <i class="fas fa-compass"></i>
+          Wind Degree: <%= weather.wind.deg %>°
+        </p>
+        <p>
+          <i class="fas fa-tint"></i>
+          Humidity: <%=weather.main.humidity%>%
+       </p>
+       <p>
+        <i class="fas fa-sun"></i>
+        Sunrise: <%=formatTime(weather.sys.sunrise)%>
+      </p>
+      <p>
+        <i class="fas fa-moon"></i>
+        Sunset: <%=formatTime(weather.sys.sunset)%>
+      </p><br>
+      <% if (facts && facts.length > 0) { %>
+        <div class="facts">
+            <h2>Your Daily Fact:</h2>
+            <p><%= facts[0].fact %></p>
+        </div>
+      <% } else { %>
+        <p>No Facts Available :(</p>
+      <% } %>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
